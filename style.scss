@@ -23,7 +23,7 @@ body {
 
 }
 h4 {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 #logo_home {
     width: 40%;
@@ -62,17 +62,20 @@ ul {
 }*/
 lead a {
     color: $main_color;
+    font-weight: bold;
     &:hover {
-        font-weight: bold;
         color: $main_color;
     }
 }
-.soft_skills, .contact {
+.soft_skills, .contact, .titre {
     font-size: 2em;
 }
 .icone {
     width: 20%;
     height: 20%;
+}
+lead .competences {
+    font-size: 1.5em;
 }
 .cv a {
     color: $footer_color;

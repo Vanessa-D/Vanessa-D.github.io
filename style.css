@@ -28,7 +28,7 @@ body {
 }
 
 h4 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 #logo_home {
@@ -68,19 +68,23 @@ ul .active {
 }*/
 lead a {
   color: #98a783;
+  font-weight: bold;
 }
 lead a:hover {
-  font-weight: bold;
   color: #98a783;
 }
 
-.soft_skills, .contact {
+.soft_skills, .contact, .titre {
   font-size: 2em;
 }
 
 .icone {
   width: 20%;
   height: 20%;
+}
+
+lead .competences {
+  font-size: 1.5em;
 }
 
 .cv a {
