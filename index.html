@@ -4,42 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/51b1869a1d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Cv Développeuse web</title>
 </head>
-<body class="d-flex flex-column">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Bienvenue</a>
-            <div id="hamburger">
-                <a href="aujourdhui.html"><i class="fas fa-bars fa-customize"></i></a>
-            </div>
-        </nav>
-    </header>
-    <main class="content flex-grow-1">
-        <div class="container">
-            <div class="presentation mt-5">
-                <h4 class="nom mb-4">Je m'appelle <strong>Vanessa</strong></h4>
-                <h1 class="titre">Etudiante Développeuse Web</h1>
-                <lead>A la recherche d'un <strong>stage</strong> de 6mois à partir de <strong>juillet 2021.</strong></lead>
-            </div>
-            <div class="mt-5">
-                <div class="col-5 offset-1">
-                    <p class="mb-0"><a href="#" class="clignotant">Réalisations</a></p>
+<body>
+    <div class="container-fluid pr-0">
+        <div class="row">
+            <aside class="side_text col-2 d-flex justify-content-center align-items-center position-fixed fixed-top">
+                <p>DEVELOPPEUSE WEB JUNIOR</p>
+                <p>DEVELOPPEUSE WEB JUNIOR</p>
+                <p>DEVELOPPEUSE WEB JUNIOR</p>
+            </aside>
+            <main class="main_home col-10 p-0">
+                <header>
+                    <nav class="navbar navbar-light">
+                        <a class="myName navbar-brand" href="#">VANESSA D</a>
+                        <button class="navbar-toggler border border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aujourdhui.html">Aujourd'hui</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hier.html">Hier</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <div class="main_content">
+                    <div id="hero" class="col-12 pl-4 pl-lg-5 pt-1 pb-1">
+                        <p id="name_portfolio">VANESSA DUCLOUX ㅡ PORTFOLIO</p>
+                        <h1>Développeuse Web basée à Paris. Sensibilité au code propre.</h1>
+                        <div class="spinning-box">
+                            <div class="spinning-text">
+                                <a href="mailto:vanessa.ducloux@laposte.net">
+                                    <div class="spinningText_Style">
+                                        <img class="first-circle" src="images/spinned_text.png" alt="Texte curvé qui tourne : Recherche un stage de six mois">
+                                        <img class="second-circle" src="images/spinned_text_transparency.png" alt="Test curvé transparent qui tourne : Recherche un stage de six mois">
+                                    </div>
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured_work">
+                        <h2><span>PROJETS</span> VEDETTES</h2>
+                        <div class="container_projects">
+                            <div class="project averaging">
+                                <div class="card mb-3"><!-- style="max-width: 540px;" -->
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <a href="averaging.html"><img class="img-fluid" src="images/capture_averaging.png" alt="Capture d'écran de l'application Calcule ta moyenne"></a>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex align-items-md-center">
+                                            <div class="project_description card-body pl-md-3">
+                                                <h5 class="card-title mb-lg-3">CALCULE LA MOYENNE</h5>
+                                                <p class="card-text">Rentre des notes et calcule ta moyenne.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="project_name_decoration">
+                                        <p>MOYENNE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="project guess_the_number">
+                                <div class="card mb-3"><!-- style="max-width: 540px;" -->
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <a href="#"><img class="img-fluid" src="images/capture_guessTheNumber.png" alt="Capture d'écran de l'application Calcule ta moyenne"></a>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex align-items-md-center">
+                                            <div class="project_description card-body pl-md-3">
+                                                <h5 class="card-title mb-lg-3">DEVINE LE NOMBRE</h5>
+                                                <p class="card-text">Joue à deviner le nombre mystère.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="project_name_decoration">
+                                        <p>MOYENNE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="project shifumi">
+                                <div class="card mb-3"><!-- style="max-width: 540px;" -->
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <a href="#"><img class="img-fluid" src="images/capture_foretDeMasaka.png" alt="Capture d'écran de l'application Calcule ta moyenne"></a>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex align-items-md-center">
+                                            <div class="project_description card-body pl-md-3">
+                                                <h5 class="card-title mb-lg-3">SHIFUMI</h5>
+                                                <p class="card-text">Joue à Pierre Feuille Ciseaux avec l'ordinateur.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="project_name_decoration">
+                                        <p>MOYENNE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="project foret_de_massaka"></div>
+                            <div class="project wack_a_ghost">
+                                <div class="card mb-3"><!-- style="max-width: 540px;" -->
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <a href="#"><img class="img-fluid" src="images/capture_WhackAGhost.png" alt="Capture d'écran de l'application Calcule ta moyenne"></a>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex align-items-md-center">
+                                            <div class="project_description card-body pl-md-3">
+                                                <h5 class="card-title mb-lg-3">WACK A GHOST</h5>
+                                                <p class="card-text">joue à taper les fantômes le plus vite possible.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="project_name_decoration">
+                                        <p>MOYENNE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="project sounds_good">
+                                <div class="card mb-3"><!-- style="max-width: 540px;" -->
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <a href="#"><img class="img-fluid" src="images/capture_SoundsGood.png" alt="Capture d'écran de l'application Calcule ta moyenne"></a>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex align-items-md-center">
+                                            <div class="project_description card-body pl-md-3">
+                                                <h5 class="card-title mb-lg-3">SOUNDS GOOD</h5>
+                                                <p class="card-text">Site fictif de ventes d'intruments de musique.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="project_name_decoration">
+                                        <p>MOYENNE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2 offset-2">
-                    <a href="#" class="clignotant"><i class="fas fa-angle-down fa-lg"></i></a>
-                </div>
-            </div>
+            </main>
         </div>
-    </main>
-    <!--Attribution text : web development by SBTS from the Noun Project-->
-    <div class="bottom position-relative">
-        <!--<img src="images/logo_home.png" alt="logo développement web" id="logo_home">-->
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

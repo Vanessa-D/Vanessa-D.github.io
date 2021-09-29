@@ -1,77 +1,241 @@
 @charset "UTF-8";
+/* Police contourée */
+@font-face {
+  font-family: 'LuloCleanOutlineBold';
+  src: url("fonts/LuloCleanOutlineBold-webfont.woff2") format("woff2"), url("fonts/LuloCleanOutlineBold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*
-Règle qui définit les étapes qui composent la séquence d'une animation CSS, ici liée au clignotement en lui
-donnant un nom ("clignoter" par ex) pour pouvoir l'utiliser avec la propriété animation
+@keyframes : 
+Règle qui définit les étapes qui composent la séquence d'une animation CSS, ici liée à la rotation d'un élément
+en lui donnant un nom (ici "spinned-text") pour pouvoir l'utiliser avec la propriété animation sur l'élément
+ciblé
 */
-@keyframes clignoter {
+@-webkit-keyframes spinned-text {
   0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    opacity: 1;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
+@keyframes spinned-text {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5F5F5;
+  /*height: 100vh;*/
 }
 
-/*.navbar-light {
-    background-color: white;
+aside {
+  background-color: #474FCC;
+  height: 100%;
+  overflow: hidden;
+}
+
+aside p {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-family: 'LuloCleanOutlineBold';
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.5;
+}
+
+.main_home {
+  margin-left: 15vw;
+}
+
+.main_home header nav {
+  background-color: white;
+  padding: .5rem 1rem .5rem 1.3rem;
+  width: 100%;
+}
+
+.main_home header nav .navbar-nav .nav-link {
+  color: black;
+}
+
+.main_home header nav .myName {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.main_home header nav .myName:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.main_home .main_content #hero {
+  margin-top: 55px;
+  margin-bottom: 100px;
+  min-height: 60vh;
+  position: relative;
+}
+
+.main_home .main_content #hero #name_portfolio {
+  color: #474fcc;
+  font-weight: bolder;
+  font-size: 13px;
+  margin-bottom: 0;
+  height: 30px;
+}
+
+.main_home .main_content #hero h1 {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-size: 2rem;
+}
+
+.main_home .main_content #hero .spinning-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  position: absolute;
+  left: -10%;
+  top: 80%;
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text a {
+  color: black;
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text a .spinningText_Style {
+  position: relative;
+  -webkit-animation: 10s linear 0s infinite normal none running spinned-text;
+          animation: 10s linear 0s infinite normal none running spinned-text;
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text a .spinningText_Style .first-circle {
+  height: 120px;
+  width: 120px;
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text a .spinningText_Style .second-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  height: 200px;
+  width: 200px;
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text a .fa-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  font-size: 11px;
+}
+
+.main_home .main_content #hero .spinning-box .spinning-text a .fa-heart:active {
+  color: black;
+}
+
+.main_home .main_content .featured_work {
+  padding: 16px 16px 20px 20px;
+}
+
+.main_home .main_content .featured_work h2 {
+  font-size: 22px;
+}
+
+.main_home .main_content .featured_work h2 span {
+  font-family: 'LuloCleanOutlineBold';
+  letter-spacing: -4px;
+}
+
+.main_home .main_content .featured_work .container_projects .project {
+  padding-bottom: 16px;
+}
+
+.main_home .main_content .featured_work .container_projects .project .card {
+  background-color: #f5f5f5;
+  border: #f5f5f5 solid 3px;
+}
+
+.main_home .main_content .featured_work .container_projects .project .card .img-fluid {
+  width: 100%;
+  height: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_home .main_content .featured_work .container_projects .project .card .card-body {
+  padding: 32px 0;
+}
+
+.main_home .main_content .featured_work .container_projects .project .card .card-body .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.main_home .main_content .featured_work .container_projects .project .card .card-body .card-text {
+  font-size: 15px;
+}
+
+/*.fa-customize
+{
+    color: $main_color;
+    font-size: large;
 }*/
-.fa-customize {
-  color: #98a783;
-  font-size: large;
-}
-
 h4 {
   font-size: 1em;
 }
 
-#logo_home {
-  width: 40%;
-  height: 90%;
-  position: absolute;
-  right: 10px;
-  top: -70px;
-}
-
-.bottom {
-  height: 120px;
-  background-color: #98a783;
-}
-
 /*Clignotement pendant 2,5 secondes suivant la règle "clignoter" à l'infini*/
-.clignotant {
-  animation-duration: 2.5s;
-  animation-name: clignoter;
-  animation-iteration-count: infinite;
-  transition: none;
-  color: #98a783;
-}
-
+/*.clignotant
+{
+    animation-duration: 2.5s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    color: $main_color;
+}*/
 ul {
   font-size: 0.8em;
 }
+
 ul .active {
   text-decoration: underline;
-  color: #98a783;
+  color: #474FCC;
 }
 
-/*.nav_fixe {
-    position: fixed;
-    top: 50px;
-    z-index: 9999;
-}*/
 lead a {
-  color: #98a783;
+  color: #474FCC;
   font-weight: bold;
 }
+
 lead a:hover {
-  color: #98a783;
+  color: #474FCC;
 }
 
 .soft_skills, .contact, .titre {
@@ -95,38 +259,62 @@ lead .competences {
 footer {
   border-top: #A5A7A7 1px solid;
   height: 45px;
+  width: 90%;
 }
+
 footer .fa-customize {
   color: #A5A7A7;
 }
 
+@media screen and (min-width: 1024px) {
+  header nav {
+    padding: .5rem 1rem .5rem 3rem !important;
+    height: 90px;
+  }
+  #hero {
+    min-height: 80vh;
+    margin-top: 80px !important;
+    padding-right: 8rem !important;
+  }
+  #hero h1 {
+    font-size: 3rem !important;
+  }
+  #name_portfolio, .myName {
+    font-size: 18px !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
   .icone {
     width: 18%;
     height: 18%;
   }
+}
 
-  #logo_home {
-    width: 25%;
-    height: 75%;
-  }
-}
-@media screen and (min-width: 375px) {
-  #logo_home {
-    width: 35%;
-    height: 85%;
-  }
-}
 @media screen and (min-width: 425px) {
   #logo_home {
     width: 30%;
     height: 80%;
   }
-
   .icone {
     width: 19%;
     height: 19%;
   }
 }
 
+@media screen and (min-width: 375px) {
+  #logo_home {
+    width: 35%;
+    height: 85%;
+  }
+}
+
+@media screen and (max-width: 337px) {
+  .second-circle {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
