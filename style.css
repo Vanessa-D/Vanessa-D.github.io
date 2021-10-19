@@ -37,7 +37,6 @@ ciblé
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #F5F5F5;
-  /*height: 100vh;*/
 }
 
 aside {
@@ -65,21 +64,12 @@ aside p {
 .main_home header nav {
   background-color: white;
   padding: .5rem 1rem .5rem 1.3rem;
-  width: 100%;
+  width: 101%;
 }
 
 .main_home header nav .navbar-nav .nav-link {
   color: black;
-}
-
-.main_home header nav .myName {
   font-size: 14px;
-  font-weight: bolder;
-}
-
-.main_home header nav .myName:hover {
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
 }
 
 .main_home .main_content #hero {
@@ -159,12 +149,8 @@ aside p {
   color: black;
 }
 
-.main_home .main_content .featured_work {
-  padding: 16px 16px 20px 20px;
-}
-
 .main_home .main_content .featured_work h2 {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .main_home .main_content .featured_work h2 span {
@@ -178,7 +164,7 @@ aside p {
 
 .main_home .main_content .featured_work .container_projects .project .card {
   background-color: #f5f5f5;
-  border: #f5f5f5 solid 3px;
+  border: none;
 }
 
 .main_home .main_content .featured_work .container_projects .project .card .img-fluid {
@@ -193,8 +179,8 @@ aside p {
 }
 
 .main_home .main_content .featured_work .container_projects .project .card .card-body .card-title {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 200;
   margin-bottom: 4px;
 }
 
@@ -202,31 +188,32 @@ aside p {
   font-size: 15px;
 }
 
-/*.fa-customize
-{
-    color: $main_color;
-    font-size: large;
-}*/
-h4 {
-  font-size: 1em;
+.navbar-dark {
+  background-color: #474FCC;
+  padding: .8rem 1rem;
 }
 
-/*Clignotement pendant 2,5 secondes suivant la règle "clignoter" à l'infini*/
-/*.clignotant
-{
-    animation-duration: 2.5s;
-    animation-name: clignoter;
-    animation-iteration-count: infinite;
-    transition: none;
-    color: $main_color;
-}*/
-ul {
-  font-size: 0.8em;
+.navbar-dark .fa-times {
+  color: white;
+  font-size: large;
 }
 
-ul .active {
+.time_nav ul {
+  font-size: 13px;
+}
+
+.myName {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.myName:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.active {
   text-decoration: underline;
-  color: #474FCC;
 }
 
 lead a {
@@ -238,22 +225,32 @@ lead a:hover {
   color: #474FCC;
 }
 
-.soft_skills, .contact, .titre {
+lead .skill {
+  font-size: 1.5em;
+}
+
+.soft_skills, .contact_header {
   font-size: 2em;
 }
 
-.icone {
+.skill_icon {
   width: 20%;
   height: 20%;
 }
 
-lead .competences {
-  font-size: 1.5em;
+.contact_icon {
+  width: 5%;
+  height: 5%;
 }
 
-.cv a {
+.download a p {
   color: #A5A7A7;
-  font-size: small;
+  font-size: 16px;
+}
+
+.download a img {
+  width: 50%;
+  height: 50%;
 }
 
 footer {
@@ -267,9 +264,14 @@ footer .fa-customize {
 }
 
 @media screen and (min-width: 1024px) {
+  aside p {
+    font-size: 1.7em;
+  }
   header nav {
-    padding: .5rem 1rem .5rem 3rem !important;
-    height: 90px;
+    padding: 1.5rem 1rem 1.5rem 3rem !important;
+  }
+  header nav .navbar-nav .nav-link {
+    font-size: 18px !important;
   }
   #hero {
     min-height: 80vh;
@@ -277,10 +279,53 @@ footer .fa-customize {
     padding-right: 8rem !important;
   }
   #hero h1 {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   #name_portfolio, .myName {
     font-size: 18px !important;
+  }
+  .first-circle {
+    height: 190px !important;
+    width: 190px !important;
+  }
+  .second-circle {
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .fa-heart {
+    font-size: 20px !important;
+  }
+  .featured_work h2 {
+    font-size: 55px !important;
+    margin-bottom: 5rem !important;
+  }
+  .featured_work h2 span {
+    letter-spacing: -15px !important;
+  }
+  .featured_work .project {
+    margin-bottom: 50px;
+  }
+  .featured_work .project .card-title {
+    font-size: 38px !important;
+  }
+  .featured_work .project .card-text {
+    font-size: 26px !important;
+  }
+  .fa-times {
+    font-size: x-large !important;
+  }
+  .time_nav ul {
+    font-size: 16px !important;
+  }
+  lead {
+    font-size: 20px !important;
+  }
+  .download a img {
+    width: 30% !important;
+    height: 30% !important;
+  }
+  .contact {
+    font-size: 20px !important;
   }
 }
 
@@ -288,27 +333,23 @@ footer .fa-customize {
   h1 {
     font-size: 2.5rem !important;
   }
-  .icone {
-    width: 18%;
-    height: 18%;
+  .spinning-box {
+    top: 65% !important;
+  }
+  .skill_icon {
+    width: 18% !important;
+    height: 18% !important;
   }
 }
 
 @media screen and (min-width: 425px) {
-  #logo_home {
-    width: 30%;
-    height: 80%;
-  }
-  .icone {
+  .skill_icon {
     width: 19%;
     height: 19%;
   }
-}
-
-@media screen and (min-width: 375px) {
-  #logo_home {
-    width: 35%;
-    height: 85%;
+  .download a img {
+    width: 40%;
+    height: 40%;
   }
 }
 

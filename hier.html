@@ -11,85 +11,54 @@
     <link rel="stylesheet" href="style.css">
     <title>Aujourdhui - Cv Développeuse web</title>
 </head>
-<body class="d-flex flex-column">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Bienvenue</a>
-            <div id="croix_menu">
-                <a href="index.html"><i class="fas fa-times fa-customize"></i></a>
-            </div>
-        </nav>
-    </header>
-    <div class="nav_fixe">
-        <nav class="navbar navbar-expand-lg navbar-light mt-4">
-            <ul class="navbar-nav text-uppercase font-weight-bolder d-flex flex-row justify-content-around w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="aujourdhui.html">Aujourd'hui<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="hier.html">Hier</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <main class="content flex-grow-1">
-        <div class="container mt-3 col-md-6 offset-md-3">  
-            <lead>
-                Hier, j'ai acquis de mes expériences passées le <strong class="competences">travail en autonomie</strong>, le <strong class="competences">travail d'équipe</strong> aussi, et développé des <strong class="competences">capacités à rebondir</strong> face aux obstacles.
-            </lead>
-            <!-- Button trigger modal -->
-            <div class="container text-center mt-3 mb-3">
-                <button type="button" class="btn btn-outline-dark font-weight-bold" data-toggle="modal" data-target="#myModal">Formation</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">DesCodeuses</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body bg-info">
-                            <p class="text-center text-uppercase text-white">Hello word !!!</p>
-                        </div>
-                        <div class="modal-footer">
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100 d-flex flex-column">
+            <header>
+                <nav class="name_nav navbar navbar-expand-lg justify-content-lg-between navbar-dark">
+                    <a class="myName navbar-brand" href="index.html">VANESSA D</a>
+                    <a href="index.html"><i class="fas fa-times fa-customize"></i></a>
+                </nav>
+            </header>
+            <div class="flex-grow-1 w-100">
+                <div class="time_nav">
+                    <nav class="navbar navbar-expand-lg navbar-light mt-4">
+                        <ul class="navbar-nav text-uppercase font-weight-bolder d-flex flex-row justify-content-around w-100">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aujourdhui.html">Aujourd'hui<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="hier.html">Hier</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <main>
+                    <div class="mt-3 col-md-6 offset-md-3">  
+                        <lead>
+                            Hier, j'ai acquis de mes expériences passées le <strong class="skill">travail en autonomie</strong>, le <strong class="skill">travail d'équipe</strong> aussi, et développé des <strong class="skill">capacités à rebondir</strong> face aux obstacles.
+                        </lead>
+                        <div class="download text-center">
+                            <a class="text-decoration-none" href="images/capture_cv.png" target="_blank" download>
+                                <p class="text-uppercase mt-4">TELECHARGER MON CV</p>
+                                <img class="mb-2 border border-dark rounded" target="_blank" src="images/capture_cv.png" alt="cv à télécharger">
+                            </a>
                         </div>
                     </div>
-                </div>
+                </main>
             </div>
-             <!-- Button trigger modal -->
-             <div class="container text-center">
-                <button type="button" class="btn btn-outline-dark font-weight-bold" data-toggle="modal" data-target="#myModal">Expériences</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">DesCodeuses</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body bg-info">
-                            <p class="text-center text-uppercase text-white">Hello word !!!</p>
-                        </div>
-                        <div class="modal-footer">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="text-uppercase cv mt-4"><a href="#">Télécharger mon cv</a></p>
+            <footer class="d-flex mx-auto align-items-center">
+                <p class="mb-0 w-100 d-flex justify-content-around">
+                    <a href="https://github.com/Vanessa-D" target="_blank"><i class="fab fa-github fa-lg fa-customize"></i></a>
+                    <a href="https://www.linkedin.com/in/vanessa-ducloux-b64362197/" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-customize"></i></a>
+                    <a href="mailto:vanessa.ducloux@laposte.net"><i class="far fa-envelope fa-customize"></i></a>
+                </p>
+            </footer> 
         </div>
-    </main>
-    <footer class="d-flex align-items-center">
-        <p class="mb-0 w-100 d-flex justify-content-around"><a href="https://github.com/Vanessa-D" target="_blank"><i class="fab fa-github fa-lg fa-customize"></i></a><a href="https://www.linkedin.com/in/vanessa-ducloux-b64362197/" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-customize"></i></a><a href="mailto:vanessa.ducloux@laposte.net"><i class="far fa-envelope fa-customize"></i></a></p>
-    </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
